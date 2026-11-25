@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Convivio Navideño ROY</title>
+<title>Convivio Alicante</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap');
 
@@ -250,8 +250,8 @@
    ✏️  EDITA AQUÍ LOS DATOS DE LA INVITACIÓN
    ===================================================================== */
 const CONFIG = {
-  encabezado: "Familia ROY",
-  evento: "Convivio Navideño",
+  encabezado: "Navidad 2026",
+  evento: "Convivio Alicante",
   fechaTexto: "Viernes 4 de diciembre de 2026",
   fechaCorta: "04 · 12 · 2026",
   hora: "1:00 pm",                             // hora de inicio
@@ -358,7 +358,7 @@ document.getElementById('rsvpForm').addEventListener('submit', function (e) {
   const name = document.getElementById('guestName').value.trim();
   const attend = document.getElementById('guestAttend').value;
   if (!name || !attend) return;
-  const msg = '¡Hola! Respuesta para el ' + CONFIG.evento + ' ROY (' + CONFIG.fechaTexto + ').\n' +
+  const msg = '¡Hola! Respuesta para el ' + CONFIG.evento + ' (' + CONFIG.fechaTexto + ').\n' +
               'Nombre: ' + name + '\n' + attend;
   const url = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(msg);
   document.getElementById('waLink').href = url;
